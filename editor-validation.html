@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Managing System</title>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Managing System</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="list.html">List</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#">Home</a></li> -->
+        </ul>
+        <button class="btn btn-primary"> Log Out </button>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col col-lg-7">
+                <h3>이용수 할머니</h3>
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary">Export Data as .csv</button>
+                <button class="btn btn-secondary">Publish to Dialogflow</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <!-- 모든 영상 목록 -->
+                    <a class="nav-link" href="editor-clips.html">Clips</a>
+                </li>
+                <li class="nav-item">
+                    <!-- 모든 Intent/Response 목록 -->
+                    <a class="nav-link" href="editor-intents.html">Intents</a>
+                </li>
+                <li class="nav-item">
+                    <!-- 검토 및 수정 탭 -->
+                    <a class="nav-link active" href="editor-validation.html">Validation</a>
+                </li>
+                <li class="nav-item">
+                    <!-- 모든 대화 로그 -->
+                    <a class="nav-link" href="editor-chatlog.html">Chat Logs</a>
+                </li>
+            </ul>
+
+
+            <!-- intents tab -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <form class="form-inline">
+                            <select class="form-control">
+                                <option>All...</option>
+                                <option>Intents</option>
+                                <option>Clips</option>
+                            </select>
+                            <input class="form-control" type="text" placeholder="search for...">
+                            <button type="submit" class="btn btn-dark">Search</button>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+                <div style="height:60vh; overflow:auto;">
+                    <table class="table" style="margin-top:20px;">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>some</th>
+                                <th>header</th>
+                                <th>content</th>
+                                <th>edit</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <!-- edit 클릭 전 -->
+                            <tr>
+                                <th>ID</th>
+                                <th>-</th>
+                                <th>-</th>
+                                <th>-</th>
+                                <th>
+                                    <button class="btn btn-link">edit</button>
+                                </th>
+                            </tr>
+
+                            <!-- edit 클릭 후 -->
+                            <tr>
+                                <th>ID</th>
+                                <th><input type="text" class="form-control"></th>
+                                <th><input type="text" class="form-control"></th>
+                                <th><input type="text" class="form-control"></th>
+                                <th>
+                                    <button class="btn btn-primary">save</button>
+                                </th>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+img {
+    width: 100%;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.btn {
+    margin: 2px;
+}
+
+.card-title {
+    margin-top: 10px;
+}
+
+.card {
+    padding: 5px;
+}
+
+.list-group {
+    max-height: 60vh;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+video {
+    width: 100%;
+}

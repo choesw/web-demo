@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Managing System</title>
+    <style>
+        video {
+            height: 100vh;
+        }
+
+        html {
+            background-color: black;
+        }
+
+        .div-video {
+            display: block;
+            position: fixed;
+            margin: 0% 10%;
+        }
+
+        .div-video>#div-idle {
+            z-index: -100;
+        }
+
+        .controls {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        #language {
+            display: inline-block;
+            padding: 20px;
+        }
+
+        #input-space {
+            display: inline-block;
+            width: 49%;
+        }
+
+        #output-space {
+            display: inline-block;
+            width: 49%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Managing System</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="list.html">List</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#">Home</a></li> -->
+        </ul>
+        <button class="btn btn-primary"> Log Out </button>
+    </nav>
+    <!-- 
+    <div class="interview-video">
+        <video ref={this.idleVideo} src="assets/sample_idle_video.mp4" style="z-index: -1; width:100%; position:fixed;"
+            loop autoplay>
+            <track kind="subtitles" label="korean" src="assets/sample_idle_video.vtt" srclang="ko" default>
+            </track>
+        </video>
+        <video ref={this.resultVideo} src="assets/sample_result_video.mp4" style="width:100%; position:fixed">
+            <track kind="subtitles" label="korean" src="assets/sample_idle_video.vtt" srclang="ko" default>
+            </track>
+        </video>
+    </div> -->
+    <div class="controls">
+        <div id="input-space">
+            <form id="form">
+                <input type="text" id="queryin">
+                <button id="submit-text" type="submit">제출</button>
+            </form>
+        </div>
+        <div id="output-space"></div>
+    </div>
+
+    <div class="div-video" id="div-idle">
+        <video id="idle" src="assets/sample_idle_video.mp4" width="100%" autoplay muted loop>
+        </video>
+        <!-- <video width="100%" autoplay muted loop>
+            <source id="idle" src="video/A_01.mp4">
+        </video> -->
+
+    </div>
+    <div class="div-video" id="div-result">
+        <video id="result-video" src="assets/sample_idle_video.mp4" width="100%" autoplay muted>
+        </video>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

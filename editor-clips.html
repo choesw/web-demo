@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Managing System</title>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Managing System</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="list.html">List</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#">Home</a></li> -->
+        </ul>
+        <button class="btn btn-primary"> Log Out </button>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col col-lg-7">
+                <h3>이용수 할머니</h3>
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary">Export Data as .csv</button>
+                <button class="btn btn-secondary">Publish to Dialogflow</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <!-- 모든 영상 목록 -->
+                    <a class="nav-link active" href="editor-clips.html">Clips</a>
+                </li>
+                <li class="nav-item">
+                    <!-- 모든 Intent/Response 목록 -->
+                    <a class="nav-link" href="editor-intents.html">Intents</a>
+                </li>
+                <li class="nav-item">
+                    <!-- 검토 및 수정 탭 -->
+                    <a class="nav-link" href="editor-validation.html">Validation</a>
+                </li>
+                <li class="nav-item">
+                    <!-- 모든 대화 로그 -->
+                    <a class="nav-link" href="editor-chatlog.html">Chat Logs</a>
+                </li>
+            </ul>
+
+
+            <!-- clips tab -->
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-group list-group-flush">
+
+                            <!-- List item -->
+                            <li class="list-group-item">
+                                <!-- click to play clip -->
+                                <h5><a href="#">greeting_name</a></h5>
+                                이용수 입니다.
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5>예 군복을 입고 있는 사람이 관리를 했습니다.
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 그렇지요 군이 안이지 부대 안이니까 집도 별로 없었어요 워낙 부대가 넓으니까
+                                전부 비행기장이니까 좀 하겠어요? 유일하게 그 나무밖에없어요 집도 우리 살던 집도 위안소가 무너졌는데 그것도 나무예요 나무로 지은 집이라서 없어졌어요 그렇지만
+                                큰 나무가 지금도 말해주고있어요 역사를 말해주고 있는 게 큰 나무에요
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 대만 신죽 가미가제 부대입니다 특공대 신죽에 부대 안에 우리도 있었습니다
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 군복을 입은 사람이 관리를 했습니다
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 그것까지는 모릅니다 부대 안이니까 감시같은 것도 안했는것같고 거기는 또 집이
+                                전무 나무입니다 나무로지어가지고 위안소가 무너졌는데도 그게 나무여요 나무 그러니까 집을 콘크리트로 지은 것 같으면 폭탄 맞은 것 같으면 죽었지요 나무였으니까
+                                살아나왔습니다
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 홀치기 그걸해가지고 군인들 그거해줘요 배에 감는거 그걸 해주면 전쟁이긴다고
+                                그걸하고했는데도 그거 전쟁이 뭔지 그건 몰랐어요
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 몇살땐지 모르지만은 일본군인이 행진도 하고 그랬어요 일본사람들 많이 나와가
+                                살았잖아요 그저 그런가보다 생각했고 백화점도 있었어요 대구에
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 홀치기 그게 무너지 이래 걸어놓고 손으로 요래 하마 그걸가지고 군인 허리띠를
+                                해준다하는데 그래가지고 그때 조선 때인데 돈 버는 사람이 있었어요 홀치기해가지고 그렇게 말 들었지 자세히는 모릅니다
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 길에 보면 행진하는 거를 봤어요 그러는데 그 때에 일본 군인이 행진을 하면서
+                                부르는 노래가 있더라고요 (노래 시작) 그 노래를 부르면서 행진을 하는데 보통 생각했습니다 예사로 봤습니다.
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 뭐가 있었는지 내가 봤습니다 보니까 벌판인데 벌판인데 사탕수수그게 밭에 쳐논게
+                                있습니다 그걸 많이 뜯어먹었습니다 사탕수수
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 군인들이 오니까는 군인들이 일본말 쓰지요 그러니까 내가 가타가나 그거가지고
+                                대화를 했지요
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 누구하고 합니까 조선말 할 사람이 없었어요
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 없었습니다
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 모르겠어요 한번도 가본 적 없고 내가 여기 복막염인지 늑막염인지 나도 모르게
+                                수술 흔적이 있더라고요 근데 그 부대안에서 가가지고 부대에 가서 했겠지요 이게 나와가지고 재발해서 죽을 뻔했어요 그 복막염인데 그때에 거기서 정신 없을적에
+                                이게 탈 나가지고 갔던가봐요 수술했는데 거기서 잘못해가지고 나와가지고 재발해가지고 대구에 대학병원에 입원해서 살았어요 그때 수술안했으면 죽었어요 나는 기억이
+                                없는데 수술했더라고요
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 그니까 이제 그 부인이 피난을 갔는데 거기서 얼마 안떨어진데로 간 모양이라
+                                거기서 걸렸는데도 거기서 치료해줬지요
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 그 물이 부대 안이니까 물을 갖다먹는데 물이 없어가지고 조금 이래 도랑인데 큰
+                                나무 있는데 도랑인데 물이 조금 있더라고요 워낙더운데에요 굉장히 덥습니다 더운데 그래서 내가 목욕을 했는데 그때부터 그게 소변보니까 굉장히 안좋아요 그랬는데
+                                그걸 했는데 그게 음질이라하던가 음질, 병이라하더라고요 그래가지고 부대에서 약을 갖다줘가지고 약을 먹었는데 그러다가 저 전기고문도 했지 해가지고 겸해가지고
+                                나와서 많이 아팠어요 그래서 누구한테 말도 못하고 살에 다니면서 풀을 무척 뜯어먹었어요 그거 먹고해가지고 병원에도 못가고 얘기도 할 수 없고 이래가지고 내제에
+                                그래가지고 병원에 가서 치료를 하고 했어요
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 위안소에 시설이 그런 시설이 없었습니다 물도 갖다먹고했는데 그 뭐 목욕하는
+                                그런것도 없었고 그저 앞에 그 큰 나무가 있는데 도랑이 있었는데 거기 물이 조금씩 내려가는데 거기다 목욕도 하고 그랬어요
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 빨래는 그 부대에서 해다주는걸로 알고 있습니다
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 거기서는 그렇게 구속적인 그건 안했습니다 또 // 자주 이래 같은 동료라도
+                                못만납니다 자기 방에만 있고 자기 그거만 하지 자유를 안주고 좀 구속적인 생활을 했습니다
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 선물준적은 없습니다 없고 오면 감빵같은거, 된장국 미소시로 그런거를 이제
+                                보내주고는 하는 거
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 거기는 특히 참 특공대라고 생각합니다. 그래서 잘 대해주는거면 굉장히 친절하고
+                                난폭한 건 없었습니다
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 그렇죠 // 처음에 가가지고 군인방에들어가지 않는다고 그때 폭행 당하고
+                                전기고문 당하고 많이 끌려갈적에 하고 그렇게 당했지 가가지고는 그런 게 없었습니다
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 임신한 여성은 못봤고, 본인이, 제가 그렇게 위안소가 무너져가지고 나올 적에
+                                그때 당했는 걸 임신이라고 믿었습니다
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 저는 폭탄 연기를 맡아서 그렇다고 얘길했는데 나와가지고는 이 군인이 내일
+                                죽으러간다하는 거예요 그래서 내가 히라가나로 이래 써가지고 그래 내가 임신했다하니까 맞다고 군인이하는 얘기가 맞다고 도시코상 도시코 그 때 임신했었다고 그런데
+                                바꾸당(***)때미로 그랬다면서로 자기가 위로를 해주더라고요 그래도 나와가지고 쭉 얘기할적에 폭탄 연기를 마셔서 그렇다고 얘기했지 안했는데 그걸 가만히
+                                생각해보면 임신이었던가봐요
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="#">Clip Number or Name</a></h5> 예 감사합니다
+                            </li>
+
+
+                            <!-- List item ends here -->
+
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <form class="form-inline">
+                            <input class="form-control" type="text" placeholder="search for...">
+                            <button type="submit" class="btn btn-dark">Search</button>
+                        </form>
+                        <video height="300vh" src="assets/greeting_name.mp4" controls></video>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
