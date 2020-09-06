@@ -1,78 +1,105 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <title>Managing System</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Managing System</a>
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active"><a class="nav-link" href="#">List</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="#">Home</a></li> -->
-        </ul>
-        <button class="btn btn-primary"> Log Out </button>
+      <a class="navbar-brand" href="#">Managing System</a>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"><a class="nav-link" href="#">List</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="#">Home</a></li> -->
+      </ul>
+      <button class="btn btn-primary">Log Out</button>
     </nav>
 
     <!-- Body -->
     <div class="container">
-        <!-- Row Start -->
-        <div class="row">
+      <!-- Row Start -->
+      <div class="row">
+        <!-- 카드 한개당 할머니 한 분에 대한 정보가 들어갑니다. -->
+        <div class="col-sm">
+          <div class="card">
+            <img src="assets/thumbnail0.jpg" alt="" />
+            <h5 class="card-title">이용수 할머니</h5>
 
-            <!-- 카드 한개당 할머니 한 분에 대한 정보가 들어갑니다. -->
-            <div class="col-sm">
-                <div class="card">
-                    <img src="assets/thumbnail0.jpg" alt="">
-                    <h5 class="card-title">이옥선 할머니</h5>
+            <!-- 정보 요약 부분 -->
+            <h6 class="card-text">검토가 필요한 대화 : n개</h6>
+            <h6 class="card-text">전체 대화 수 : n개</h6>
 
-                    <!-- 정보 요약 부분 -->
-                    <h6 class="card-text">검토가 필요한 대화 : n개</h6>
-                    <h6 class="card-text">전체 대화 수 : n개</h6>
-
-                    <a href="interview.html" class="btn btn-primary" style="display:inline;">Interview</a>
-                    <a href="editor-clips.html" class="btn btn-secondary" style="display:inline;">Edit</a>
-                </div>
-            </div>
-            <!-- 카드 끝 -->
-
-            <div class="col-sm">
-                <div class="card">
-                    <img src="assets/thumbnail1.jpg" alt="">
-                    <h5 class="card-title">이용수 할머니</h5>
-
-                    <!-- 정보 요약 부분 -->
-                    <h6 class="card-text">검토가 필요한 대화 : n개</h6>
-                    <h6 class="card-text">전체 대화 수 : n개</h6>
-
-                    <a href="interview.html" class="btn btn-primary" style="display:inline;">Interview</a>
-                    <a href="editor-clips.html" class="btn btn-secondary" style="display:inline;">Edit</a>
-                </div>
-            </div>
-
-            <div class="col-sm">
-            </div>
-
+            <a
+              href="interview.html"
+              class="btn btn-primary"
+              style="display: inline"
+              >Interview</a
+            >
+            <a
+              href="editor-clips.html"
+              class="btn btn-secondary"
+              style="display: inline"
+              >Edit</a
+            >
+          </div>
         </div>
-        <!-- Row ends here -->
+        <!-- 카드 끝 -->
+
+        <div class="col-sm">
+          <div class="card">
+            <img src="assets/thumbnail1.jpg" alt="" />
+            <h5 class="card-title">이옥선 할머니</h5>
+
+            <!-- 정보 요약 부분 -->
+            <h6 class="card-text">검토가 필요한 대화 : n개</h6>
+            <h6 class="card-text">전체 대화 수 : n개</h6>
+
+            <a
+              href="interview.html"
+              class="btn btn-primary"
+              style="display: inline"
+              >Interview</a
+            >
+            <a
+              href="editor-clips.html"
+              class="btn btn-secondary"
+              style="display: inline"
+              >Edit</a
+            >
+          </div>
+        </div>
+
+        <div class="col-sm"></div>
+      </div>
+      <!-- Row ends here -->
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
