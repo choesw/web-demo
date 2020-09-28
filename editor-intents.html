@@ -26,23 +26,21 @@
     <div class="container">
 
         <div class="row">
-            <div class="col col-lg-7">
+            <div class="col col-lg-6">
                 <h3>이용수 할머니</h3>
             </div>
             <div class="col">
-                <button class="btn btn-primary"> Log Out </button>
+                <button class="btn btn-secondary">Export Data as .csv</button>
+                <button class="btn btn-secondary">Publish to Dialogflow</button>
+                <button class="btn btn-primary">Save Changes</button>
             </div>
         </div>
 
         <div class="controls">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <!-- 모든 영상 목록 -->
-                    <a class="nav-link" href="editor-clips.html">Clips</a>
-                </li>
-                <li class="nav-item">
-                    <!-- 모든 Intent/Response 목록 -->
-                    <a class="nav-link active" href="editor-intents.html">Intents</a>
+                    <!-- 모든 Intent 목록 -->
+                    <a class="nav-link active" href="editor-intents.html">Intent/Clips</a>
                 </li>
                 <li class="nav-item">
                     <!-- 검토 및 수정 탭 -->
@@ -57,43 +55,184 @@
 
             <!-- intents tab -->
             <div class="container">
-                <form class="form-inline">
-                    <input class="form-control" type="text" placeholder="search for...">
-                    <button type="submit" class="btn btn-dark">Search</button>
-                </form>
+                <div class="row">
+                    <div class="col">
 
-                <ul class="list-group list-group-flush">
+                        <form class="form-inline">
+                            <!-- Search option (optional) -->
+                            <select class="form-control">
+                                <option>All...</option>
+                                <option>Intent</option>
+                                <option>Clip Number</option>
+                                <option>Response</option>
+                            </select>
+                            <input class="form-control" type="text" placeholder="search for...">
+                            <button type="submit" class="btn btn-dark">Search</button>
+                        </form>
 
-                    <!-- List item -->
-                    <li class="list-group-item">위안소를 관리한 게 군대에서 관리한 건지 혹시 아세요?</li>
-                    <li class="list-group-item"> 위안소가 부대 안에 있었어요?</li>
-                    <li class="list-group-item"> 위안소가 있던 장소가 어디인가요?</li>
-                    <li class="list-group-item"> 위안소 관리자가 군인이었나요?</li>
-                    <li class="list-group-item"> 그 위안소를 군인이 지키면서 감시했나요?</li>
-                    <li class="list-group-item"> 일본 군인을 처음 보신 게 언제예요?</li>
-                    <li class="list-group-item"> 전쟁이 난 걸 알고 계셨어요?</li>
-                    <li class="list-group-item"> 일본 군인을 처음 보신 게 언제예요?</li>
-                    <li class="list-group-item"> 홀치기가 뭐예요?</li>
-                    <li class="list-group-item"> 어렸을 때 일본 군인을 보신 적 있으세요?</li>
-                    <li class="list-group-item"> 위안소에 도착하셨을 때 가서 보니까 주변 풍경이 어땠어요? 뭐가 있었어요?</li>
-                    <li class="list-group-item"> 위안소에서는 일본말만 쓰셨어요?</li>
-                    <li class="list-group-item"> 군인들 말고 다른 사람들하고는 조선말로 말씀하셨어요?</li>
-                    <li class="list-group-item"> 군인 중에 조선사람도 있었어요?</li>
-                    <li class="list-group-item"> 위안소 안에 의사가 있었어요?</li>
-                    <li class="list-group-item"> 말라리아 걸리셨다고 했었잖아요 말라리아는 치료해줬나요?</li>
-                    <li class="list-group-item"> 그 외에 병이 났던 적이 있으세요?</li>
-                    <li class="list-group-item"> 위안소 시설은 어땠어요?</li>
-                    <li class="list-group-item"> 빨래도 거기서 하셨어요?</li>
-                    <li class="list-group-item"> 개인적으로 쉬는 시간도 주어졌어요?</li>
-                    <li class="list-group-item"> 군인이 팁이나 선물을 준 적도 있습니까</li>
-                    <li class="list-group-item"> 군인들이 인간답게 대해주던가요?</li>
-                    <li class="list-group-item"> 그러면 거부를 할 때만 고통을 당하시고 폭력이나 고문을 당하신거네요?</li>
-                    <li class="list-group-item"> 폭력을 당했나요?</li>
-                    <li class="list-group-item"> 혹시 같은 위안소에 임신한 여성분이 있었어요?</li>
-                    <li class="list-group-item"> 왜 본인이 임신했다고 생각하셨어요? 상황 다시 설명해주세요</li>
-                    <li class="list-group-item"> 할머니 오늘 말씀 감사합니다</li>
+                        <ul class="list-group list-group-flush">
 
-                </ul>
+                            <!-- List item starts here-->
+                            <!-- data-target과 collapse 걸린 div의 id가 일치해야 하며 unique 해야 합니다. -->
+                            <li class="list-group-item"><a href="#" data-target="#intent-01">인텐트 이름과 대표 인텐트가 이곳에
+                                    들어갑니다.</a>
+                            </li>
+
+                            <!--List item ends here-->
+
+                            <!--  -->
+                            <!--  -->
+                            <!--  -->
+                            <li class="list-group-item"><a href="#" data-target="#intent-01">인텐트 이름과 대표 인텐트가 이곳에
+                                    들어갑니다.</a>
+                            </li>
+                            <li class="list-group-item"><a href="#" data-target="#intent-01">인텐트 이름과 대표 인텐트가 이곳에
+                                    들어갑니다.</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-body">
+                            <p class="text-right">
+                                <button class="btn btn-link" data-toggle="modal" data-target="#modal">edit</button>
+                                <!-- 현재 intent 정보를 수정합니다. -->
+                                <button class="btn btn-link btn-link-red">delete</button>
+                                <!-- 현재 intent 정보를 삭제합니다. -->
+                            </p>
+                            <p>
+                                <!-- Title -->
+                                <h6>Intent Name / Clip Name</h6>
+                            </p>
+
+                            <p>
+                                <h6>Matching Info.</h6>
+                                Infographic list
+                            </p>
+
+                            <!-- Training Phrases -->
+                            <!-- <p>
+                                <h6>Training Phrases</h6>
+                                <ul>
+                                    <li>이곳에 다른 training phrases가 표시됩니다.</li>
+                                    <li>이곳에 다른 training phrases가 표시됩니다.</li>
+                                    <li>이곳에 다른 training phrases가 표시됩니다.</li>
+                                </ul>
+                            </p> -->
+
+                            <p>
+                                <h6>Clip Name</h6>
+                                이곳에 클립 이름이 들어갑니다.
+                            </p>
+
+                            <p>
+                                <h6>Clip Transcript</h6>
+                                이곳에 클립 트랜스크립트가 들어갑니다.
+                            </p>
+
+
+                        </div>
+
+                        <video height="300vh" src="assets/greeting_name.mp4" controls></video>
+
+                    </div>
+                </div>
+
+                <!-- edit intent 모달 입니다 -->
+                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Edit Intent</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <p>
+                                        <h6>Intent Name</h6>
+                                        여기에 현재 Intent의 이름이 표시됩니다.
+                                    </p>
+
+                                    <div class="form-group">
+                                        <label for="Clip Name">Clip Name</label>
+                                        <select class="form-control">
+                                            <option>Clip Number</option>
+                                            <option>Clip Number</option>
+                                            <option>Clip Number</option>
+                                            <option>Clip Number</option>
+                                        </select>
+                                    </div>
+
+                                    <h6>Infographic</h6>
+                                    <div class="form-check">
+                                        <div class="container">
+
+                                            <div class="row">
+                                                <div class="col">
+                                                    <input type="checkbox" class="form-check-input"
+                                                        id="info-checkbox" />
+                                                    <label class="form-check-label" for="example-info">Info.
+                                                        Number</label>
+                                                </div>
+                                                <div class="col">
+                                                    <input type="checkbox" class="form-check-input"
+                                                        id="info-checkbox" />
+                                                    <label class="form-check-label" for="example-info">Info.
+                                                        Number</label>
+                                                </div>
+                                                <div class="col">
+                                                    <input type="checkbox" class="form-check-input"
+                                                        id="info-checkbox" />
+                                                    <label class="form-check-label" for="example-info">Info.
+                                                        Number</label>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <input type="checkbox" class="form-check-input"
+                                                        id="info-checkbox" />
+                                                    <label class="form-check-label" for="example-info">Info.
+                                                        Number</label>
+                                                </div>
+                                                <div class="col">
+                                                    <input type="checkbox" class="form-check-input"
+                                                        id="info-checkbox" />
+                                                    <label class="form-check-label" for="example-info">Info.
+                                                        Number</label>
+                                                </div>
+                                                <div class="col">
+                                                    <input type="checkbox" class="form-check-input"
+                                                        id="info-checkbox" />
+                                                    <label class="form-check-label" for="example-info">Info.
+                                                        Number</label>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                    <p>
+                                        <h6>Clip Transcript</h6>
+                                        여기에 트랜스크립트가 표시됩니다.
+                                    </p>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button submit" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- edit intent modal ends here -->
 
             </div>
 

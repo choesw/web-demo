@@ -2,159 +2,157 @@
 <html lang="ko">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Managing System</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <title>Managing System</title>
 </head>
 
 <body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Managing System</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="list.html">List</a>
+      </li>
+      <!-- <li class="nav-item"><a class="nav-link" href="#">Home</a></li> -->
+    </ul>
+    <button class="btn btn-primary">Log Out</button>
+  </nav>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Managing System</a>
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active"><a class="nav-link" href="list.html">List</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="#">Home</a></li> -->
-        </ul>
-        <button class="btn btn-primary"> Log Out </button>
-    </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col col-lg-6">
+        <h3>이용수 할머니</h3>
+      </div>
+      <div class="col">
+        <button class="btn btn-secondary">Export Data as .csv</button>
+        <button class="btn btn-secondary">Publish to Dialogflow</button>
+        <button class="btn btn-primary">Save Changes</button>
 
-    <div class="container">
+      </div>
+    </div>
 
+    <div class="controls">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <!-- 모든 Intent 목록 -->
+          <a class="nav-link" href="editor-intents.html">Intent/Clips</a>
+        </li>
+        <li class="nav-item">
+          <!-- 검토 및 수정 탭 -->
+          <a class="nav-link active" href="editor-validation.html">Validation</a>
+        </li>
+        <li class="nav-item">
+          <!-- 모든 대화 로그 -->
+          <a class="nav-link" href="editor-chatlog.html">Chat Logs</a>
+        </li>
+      </ul>
+
+      <!-- intents tab -->
+      <div class="container">
         <div class="row">
-            <div class="col col-lg-7">
-                <h3>이용수 할머니</h3>
-            </div>
-            <div class="col">
-                <button class="btn btn-secondary">Export Data as .csv</button>
-                <button class="btn btn-secondary">Publish to Dialogflow</button>
-            </div>
+          <div class="col-lg-8">
+            <form class="form-inline">
+              <select class="form-control">
+                <option>All...</option>
+                <option>Intents</option>
+                <option>Clips</option>
+              </select>
+              <input class="form-control" type="text" placeholder="search for..." />
+              <button type="submit" class="btn btn-dark">Search</button>
+            </form>
+          </div>
         </div>
 
-        <div class="controls">
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <!-- 모든 영상 목록 -->
-                    <a class="nav-link" href="editor-clips.html">Clips</a>
-                </li>
-                <li class="nav-item">
-                    <!-- 모든 Intent/Response 목록 -->
-                    <a class="nav-link" href="editor-intents.html">Intents</a>
-                </li>
-                <li class="nav-item">
-                    <!-- 검토 및 수정 탭 -->
-                    <a class="nav-link active" href="editor-validation.html">Validation</a>
-                </li>
-                <li class="nav-item">
-                    <!-- 모든 대화 로그 -->
-                    <a class="nav-link" href="editor-chatlog.html">Chat Logs</a>
-                </li>
-            </ul>
+        <!-- 날짜 선택 기능 -->
 
-
-            <!-- intents tab -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10">
-                        <form class="form-inline">
-                            <select class="form-control">
-                                <option>All...</option>
-                                <option>Intents</option>
-                                <option>Clips</option>
-                            </select>
-                            <input class="form-control" type="text" placeholder="search for...">
-                            <button type="submit" class="btn btn-dark">Search</button>
-                        </form>
-                    </div>
+        <!-- <div class="row">
+                    <div class="col-10"></div>
                     <div class="col">
                         <button class="btn btn-primary">Save changes</button>
                     </div>
-                </div>
-                <div style="height:60vh; overflow:auto;">
-                    <table class="table" style="margin-top:20px;">
-                        <thead>
-                            <tr>
-                                <th>Time Stamp</th>
-                                <th>Query</th>
-                                <th>Matching Intent</th>
-                                <th>Response</th>
-                                <th>Clip</th>
-                                <th>edit</th>
-                            </tr>
-                        </thead>
+                </div> -->
 
-                        <tbody>
+        <div style="height: 60vh; overflow: auto">
+          <table class="table" style="margin-top: 20px">
+            <thead>
+              <tr>
+                <th>Time Stamp</th>
+                <th>Query</th>
+                <th>Matching Intent</th>
+                <th>Response</th>
+                <th>Confidence</th>
+                <th>edit</th>
+              </tr>
+            </thead>
 
-                            <!-- edit 클릭 전 -->
-                            <tr>
-                                <td>2020-08-23 18:27:17</td>
-                                <td>할머니 안녕하세요?</td>
-                                <td>A_01</td>
-                                <td>안녕하세요.</td>
-                                <td>A_01.mp4</td>
-                                <td>
-                                    <button class="btn btn-link">edit</button>
-                                </td>
-                            </tr>
+            <tbody>
+              <!-- edit 클릭 전 -->
+              <tr class="chatlog-normal">
+                <td>2020-08-23 18:27:17</td>
+                <td>할머니 안녕하세요?</td>
+                <td>A_01</td>
+                <td>안녕하세요.</td>
+                <td>0.3</td>
+                <td>
+                  <button class="btn btn-link">edit</button>
+                  <button class="btn btn-link btn-link-red">delete</button>
+                </td>
+              </tr>
 
-                            <tr>
-                                <td>2020-08-23 18:28:03</td>
-                                <td>위안소가 있었던 부대하고 장소가 어딘지 아세요?</td>
-                                <td>B_32</td>
-                                <td>나는 간데가 대만 신죽 가미가제 부대 특공대로 갔었어요 다른데 모릅니다</td>
-                                <td>B_32.mp4</td>
-                                <td>
-                                    <button class="btn btn-link">edit</button>
-                                </td>
-                            </tr>
+              <!-- edit 클릭 후 -->
+              <tr class="chatlog-edit">
+                <td>2020-08-23 18:28:03</td>
+                <td></td>
+                <td>B_32</td>
+                <td>
+                  <form class="form-inline">
+                    <select class="form-control">
+                      <option>여기에 대체 인텐트가 모두 표시됩니다.</option>
+                      <option>여기에 대체 인텐트가 모두 표시됩니다.</option>
+                      <option>여기에 대체 인텐트가 모두 표시됩니다.</option>
+                      <option>여기에 대체 인텐트가 모두 표시됩니다.</option>
+                    </select>
+                  </form>
+                </td>
+                <td>0.4</td>
+                <td>
+                  <button class="btn btn-primary">save</button>
+                </td>
+              </tr>
 
-                            <tr>
-                                <td>2020-08-23 18:30:13</td>
-                                <td>위안소에서 외출하신 적 있으세요?</td>
-                                <td>A_62</td>
-                                <td>외출한 적이 없습니다.</td>
-                                <td>A_62.mp4</td>
-                                <td>
-                                    <button class="btn btn-link">edit</button>
-                                </td>
-                            </tr>
-
-
-                            <!-- edit 클릭 후 -->
-                            <tr>
-                                <td>2020-08-30 18:32:55</td>
-                                <td>할머니 성함이 어떻게 되세요?</td>
-                                <td><input type="text" class="form-control"></td>
-                                <td><input type="text" class="form-control"></td>
-                                <td><input type="text" class="form-control"></td>
-                                <td>
-                                    <button class="btn btn-primary">save</button>
-                                </td>
-                            </tr>
-                        </tbody>
-
-                    </table>
-                </div>
+              <!-- deleted intent -->
+              <tr class="item-deleted">
+                <td>2020-08-23 18:27:17</td>
+                <td>할머니 안녕하세요?</td>
+                <td>A_01</td>
+                <td>안녕하세요.</td>
+                <td>0.3</td>
+                <td> <button class="btn btn-link btn-link-red">recover</button>
+                </td>
+              </tr>
 
 
-            </div>
-
+            </tbody>
+          </table>
         </div>
-
+      </div>
     </div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

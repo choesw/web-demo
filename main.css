@@ -10,6 +10,10 @@ img {
     margin: 2px;
 }
 
+.btn-link {
+    margin: 0px !important;
+}
+
 .card-title {
     margin-top: 10px;
 }
@@ -24,6 +28,16 @@ img {
     margin-top: 20px;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
+}
+
+.btn-link-red {
+    color: red !important;
+}
+
+.item-deleted {
+    color: gray;
+    text-decoration-line: line-through;
+    -moz-text-decoration-line: line-through;
 }
 
 
